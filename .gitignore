@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Vite build output
+dist/
+
+# Local environment values
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Editor and operating-system files
+.DS_Store
+.vscode/
+.idea/
+
+
+#Other
+AGENTS.md
