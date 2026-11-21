@@ -28,6 +28,8 @@ const TransactionForm = () => {
 
 
     return (
+        <div>
+            <h1>auto-deployed from github actions</h1>
         <form onSubmit={handleSubmit}>
             <label>Transaction date:
                 <input type="date" name="transaction_date" defaultValue= {`${year}-${month}-${day}`} />
@@ -55,6 +57,7 @@ const TransactionForm = () => {
             <button type="submit">Save</button>
 
         </form>
+        </div>
 
     )
 }
