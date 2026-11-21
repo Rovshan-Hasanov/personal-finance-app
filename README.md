@@ -1,44 +1,40 @@
 # Personal Finance App
 
-A learning-focused personal finance application for organizing fictional or
-manually entered transactions.
+A learning-focused personal finance application.
 
-## Current milestone
+## Milestones
 
-The first milestone is a small React frontend that:
+### Achieved:
+- build and deploy minimal frontend to AWS S3:
+  - only static files that outputs input to console
 
-- displays fictional transactions;
-- groups each transaction under a category;
-- calculates total income, total expenses, and net cash flow; and
-- keeps data in memory while the app is running.
+### In Progress:
+- think through and build database
 
-This milestone does **not** include a database, browser persistence,
-authentication, bank connections, AWS infrastructure, or real financial data.
-See [docs/product.md](docs/product.md) for the agreed scope and success criteria.
+### To-do:
+- Tie frontend and backend
 
-## Planned local stack
+### Next:
+- add analytics, forecast etc.
 
-- React
-- Vite
-- JavaScript
-- Node.js and npm
-- ESLint and Prettier
+See [docs/product.md](docs/product.md) for scope, decisions, and open questions.
 
-The React/Vite application has not been scaffolded yet. That will be the first
-coding step after the setup checklist below is complete.
+## Stack
+
+- React + Vite (JavaScript), in `packages/frontend`
+- Node.js and npm, using npm workspaces (`packages/*`)
+- ESLint (Prettier planned, not yet added)
+- Hosting: static build served from AWS S3 via CloudFront
 
 ## Setup status
 
 - [x] Product scope documented
 - [x] Local Git repository initialized
 - [x] Git installed
-- [ ] Node.js LTS and npm installed
-- [ ] GitHub account connected
-- [ ] GitHub repository created and added as `origin`
-- [ ] React/Vite application scaffolded
-
-## Data safety
-
-Use only fictional or anonymized data. Never commit account credentials, API
-keys, or real financial records.
+- [x] Node.js LTS and npm installed
+- [x] GitHub account connected
+- [x] GitHub repository created and added as `origin`
+- [x] React/Vite application scaffolded
+- [x] Frontend deployed to AWS (manual)
+- [ ] Automated deploys from GitHub
 
